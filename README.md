@@ -30,6 +30,10 @@ This is a .NET 9.0 console application that can be used to track assets for a co
 - Assets are saved to and fetched from a database using Entity Framework
 
 ## Usage
+- Edit the connection string in AssetContext.cs to point to your database
+- The program will automatically create the database and tables if they do not exist
+- The program will seed the database with sample data if it is empty
+
 - When running, the program will show the full list of assets (sample data)
 - The program will prompt you to do one of four things: 
     - Add a new asset

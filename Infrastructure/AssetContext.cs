@@ -8,7 +8,6 @@ public class AssetContext : DbContext
 
 
     // Value converter to turn the Currency object into a string when saving, and vice versa when loading
-    // CoPilot helped me with this code, I had no idea how to fix the problem
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -32,6 +31,6 @@ public class AssetContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=ASSET_TRACKER;User Id=sa;Password=APelsinsaft@989;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=ASSET_TRACKER;User Id=sa;Password=YOURPASSWORD;TrustServerCertificate=True");
     }
 }
