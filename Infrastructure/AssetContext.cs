@@ -31,6 +31,6 @@ public class AssetContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=ASSET_TRACKER;User Id=sa;Password=YOURPASSWORD;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=Name_Of_Database;User Id=Your_UserName;Password=Your_PassWord;TrustServerCertificate=True");
     }
 }
